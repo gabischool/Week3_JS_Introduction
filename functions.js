@@ -2,24 +2,25 @@
 
 // Take the commented ES5 syntax and convert it to ES6 arrow Syntax
 
+var printer = () => 
+console.log("Hello World");
 
-/*
 
-------------
-function myFunction() {
-console.log("Function was invoked!");
-};
+const sayHello = () => console.log("Hi");
+
+sayHello()
 
 myFunction();
-----------------
+
 
 let anotherFunction = function (param) {
   return param;
 };
 
+
 anotherFunction("Example");
 
----------------
+
 
 let add = function (param1, param2) {
   return param1 + param2;
@@ -27,7 +28,11 @@ let add = function (param1, param2) {
 
 add(1,2);
 
-*/
+
+
+
+
+
 
 
 

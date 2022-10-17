@@ -7,18 +7,37 @@ Do the following:
    3. Return the result
 
    HINT: look up the Number method
-*/
-
+*/ 
+let x="1999"
+let y= Number(x);
+console.log(y)
 
 /*
 Task: Mood Checker
 
 Do the following:   
-   1. Write a script that prompts the user for their current mood. 
+   1. write a script that prompts the user for their current mood.
    2. If the user inputs happy, print 'Yay me too!' to the console, sad print 'Aw cheer up',
    3. Else just print 'So moody!'
 
 */
+
+
+let letter = prompt("Enter your mood"); 
+
+// If the letter is "Happy"
+if (letter === "happy") {
+ console.log ("Yay me too!")
+  
+// If the letter is "Sad"
+} else if (letter === "sad") {
+  console.log ("Aw cheer up.")
+  
+// If the letter is anything else
+} else {
+ console.log ("So Moody")
+}
+
 
 
 /*
@@ -28,10 +47,18 @@ Use conditionals to check if a hardcoded number is odd or even, and then console
 
 */
 
-var num = 16; // You can change this number!
+var num = 17; // You can change this number!
 
 // write your conditions here
 
+if(num % 2 == 0) {
+    console.log("The number is even.");
+}
+
+// if the number is odd
+else {
+    console.log("The number is odd.");
+}
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task: FIZZBUZZ 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -63,32 +90,11 @@ Equals 2. Because after dividing 6 by 4, there are 2 left over from the six.
 If that was confusing, don't worry. It will make more sense as you use it. 
 The point is: the remainder operator is useful for finding out if X is a multiple of Y. If it is, then X % Y will yield zero. 
 Knowing this should help you complete this assignment without any issue.
-
-
-Extra Credit:
-
-Instead of only printing "fizz", "buzz", and "fizzbuzz", add a fourth print statement: "prime". 
-You should print this whenever you encounter a number that is prime (divisible only by itself and one).
-As you implement this, don't worry about the efficiency of the algorithm you use to check for primes. 
-It's okay for it to be slow.
-
-
 */
-
-
-/*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
-
-//Vowel Counter - How many vowels are there?
-/*
-Using the vowelCounter function below do the following:
-  1. Receive a string as a parameter
-  2. Count and return the number of vowels within that string.  It should handle both capitalized and uncapitalized vowels.
-
-  HINT - you may need to study next week's content on arrays 
-  HINT - try looking up the .includes() method
-*/
-
-
-function vowelCounter(/*add your code here*/) {
-    /*add your code here*/
+for (var i = 1; i < 101; i++) {
+   if (i % 15 == 0) console.log("FizzBuzz");
+   else if (i % 3 == 0) console.log("Fizz");
+   else if (i % 5 == 0) console.log("Buzz");
+   else console.log(i);
 }
+
