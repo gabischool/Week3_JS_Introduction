@@ -28,6 +28,19 @@ let add = function (param1, param2) {
 add(1,2);
 
 */
+const myFunction = () =>{
+  console.log("function was invoked")
+}
+myFunction();
+//? ___________________________________________________
+let anotherFunction = (param) => param;
+console.log(anotherFunction("Name"))
+//!_______________________________________
+const add = (param1, param2) =>{
+  return param1 + param2;
+}
+console.log(add(1,2));
+
 
 
 
@@ -51,4 +64,20 @@ Use the game function below to do the following:
 
 function game(user, computer){
     /*add your code here*/
+   if(user === computer){
+    console.log("it's atie")
+   }else if(user === 'rock' && computer === 'paper'){
+    console.log("you win")
+  }else if(user === 'paper' && computer === 'rock'){
+    console.log("you lose")
+  }else if(user === 'rock' && computer === 'scissors'){
+    console.log("you win")
+  }else if(user === 'scissors' && computer === 'rock'){
+    console.log("you lose")
+  }else if(user === 'scissors' && computer === 'paper'){
+    console.log("you win")
+  }else if(user === 'paper' && computer === 'scissors'){
+    console.log("you lose")
+  }
 }
+console.log(game('scissors', 'rock'))
