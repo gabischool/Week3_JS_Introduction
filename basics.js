@@ -8,21 +8,35 @@ Do the following:
 
    HINT: look up the Number method / Raadi Number Method wax la dhaho
 */
+const year = "1999"
+let yearString = Number(year)
+console.log(yearString);
 
 
 /*
 Task: Mood Checker
 
 Do the following:   
-   1. Write a script that prompts the user for their current mood. / Code qor u soo saaraayo qof meeshuu ku qori lahaa siduu dareemaayo
-   2. If the user inputs happy, print 'Yay me too!' to the console, sad print 'Aw cheer up', / Haduu qofka galiyo 'happy', console log samee ah 'Yay me too', haduu 'sad' galiyo, 'Aw Cheer up' console ku qor.
-   3. Else just print 'So moody!' / Hadii kale 'So Moody!' soo saar.
+  1. Write a script that prompts the user for their current mood. / Code qor u soo saaraayo qof meeshuu ku qori lahaa siduu dareemaayo
+  2. If the user inputs happy, print 'Yay me too!' to the console, sad print 'Aw cheer up', / Haduu qofka galiyo 'happy', console log samee ah 'Yay me too', haduu 'sad' galiyo, 'Aw Cheer up' console ku qor.
+  3. Else just print 'So moody!' / Hadii kale 'So Moody!' soo saar.
 
 */
 
+let mood = prompt('what is your curent mood ')
+
+if(mood === 'happy'){
+  console.log('Yay me too!');
+ 
+} else if (mood === 'sad'){
+console.log('Aw cheer up');
+}else{
+  console.log('So Moody!');
+}
 
 /*
-Task: Odd or Even / kisi ama dhaban
+/ kisi ama dhaban
+Task: Odd or Even 
 
 Use conditionals to check if a hardcoded number is odd or even, and then console.log the number is odd or even with the numbers value.
 
@@ -35,7 +49,14 @@ var num = 16; // You can change this number! / Number-kaan ku bilow
 // write your conditions here / Code-kaada halkaan ku qor
 
 
+if(num % 2 === 0){
+  console.log(num + 'is even');
 
+}else{
+  console.log(num + 'is odd');
+}
+
+console.log(num);
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task: FIZZBUZZ 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -44,7 +65,8 @@ var num = 16; // You can change this number! / Number-kaan ku bilow
 
 You're about to do an assignment called "Fizz Buzz", which is one of the classic programming challenges. 
 
-"Fizz Buzz" waa xujo la siiyo markii dadka interview laga qaadaayo. Waa inuu programkaada soo saaro "Fizz", "Buzz" ama "FizzBuzz". 
+"Fizz Buzz" waa xujo la siiyo markii dadka interview laga qaadaayo. Waa inuu programkaada soo saaro "Fizz", "Buzz"
+ama "FizzBuzz". 
 
 
 Write a program that prints the numbers from 1 to 100.
@@ -67,7 +89,7 @@ It is represented by the percentage sign (%) and it gives you the remainder left
 
 Waxaa jiro wax la yiraahdo "modulus" oo Javascript ku jiro, kaas oo uu kuu soo saaraayo haraaga labo number oo la isku dhuftay, sidaan ayuu u qoranyahay:
 
- 6 % 3
+6 % 3
 
 Equals zero. Because after dividing 6 by 3, there is zero leftover. Whereas:
 
@@ -93,20 +115,46 @@ It's okay for it to be slow.
 
 */
 
+for(let i = 1; i <= 100; i++ ){
+  if (i % 3 === 0 && i % 5 === 0) {
+    console.log('Fizbuzz'); 
+  } else if(i % 3 === 0){
+     console.log('fizz');
+  }else if(i % 5 === 0) {
+     console.log('buzz');
+  }else{
+     console.log(i);
+  }
+}
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
 
 //Vowel Counter - How many vowels are there?
 /*
 Using the vowelCounter function below do the following:
-  1. Receive a string as a parameter
-  2. Count and return the number of vowels within that string.  It should handle both capitalized and uncapitalized vowels.
+ 1. Receive a string as a parameter
+ 2. Count and return the number of vowels within that string.  It should handle both capitalized and uncapitalized vowels.
 
-  HINT - you may need to study next week's content on arrays 
-  HINT - try looking up the .includes() method
+ HINT - you may need to study next week's content on arrays 
+ HINT - try looking up the .includes() method
 */
 
 
-function vowelCounter(/*add your code here*/) {
-    /*add your code here*/
+function vowelCounter(str) {
+  let count = 0;
+  const vowels = ["a", "e", "i", "o", "u" ];
+
+  for (let i = 0; i < str.length; i++) {
+    let elpha = str[i].toLowerCase();
+    if (vowels.includes(elpha)) {
+      count++;
+    }
+  }
+
+  return count;
 }
+
+
+
+console.log(vowelCounter("Hello, World!")); // Outputs: 3
+console.log(vowelCounter("Hello, teacher  soo diyaar maha !")); // Outputs: 3
