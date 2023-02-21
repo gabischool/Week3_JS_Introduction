@@ -8,9 +8,10 @@ Do the following:
 
    HINT: look up the Number method / Raadi Number Method wax la dhaho
 */
-
-
-/*
+ let string = "199";
+ string = 1999;
+ console.log(string)
+/* 
 Task: Mood Checker
 
 Do the following:   
@@ -19,7 +20,14 @@ Do the following:
    3. Else just print 'So moody!' / Hadii kale 'So Moody!' soo saar.
 
 */
-
+ const mood = prompt("Qor waxaad aad dareemesid");
+if(mood=="happy"){
+   console.log("yey me too!")
+}else if(mood=="sad"){
+   console.log("Aw cheer up")
+}else{
+   console.log("so moody")
+}
 
 /*
 Task: Odd or Even / kisi ama dhaban
@@ -27,14 +35,17 @@ Task: Odd or Even / kisi ama dhaban
 Use conditionals to check if a hardcoded number is odd or even, and then console.log the number is odd or even with the numbers value.
 
 Adigoo 'if/else' isticmaalaayo hubi in nambar uu yahay 'kisi ama dhaban', kadi console log ku samee adigoo sheegaayo midkuu yahay
-
 */
 
 var num = 16; // You can change this number! / Number-kaan ku bilow
 
 // write your conditions here / Code-kaada halkaan ku qor
 
-
+if(num % 2==0 ){
+   console.log("the number is even ")
+}else{
+   console.log("the number is odd")
+}
 
 
 
@@ -92,7 +103,17 @@ It's okay for it to be slow.
 
 
 */
-
+for (let i = 1; i<=100; i++){
+   if(i % 3 === 0 && i % 5 ===0){
+      console.log("fizzBuzz")
+   }else if(i % 3 === 0){
+      console.log("fizz")
+   }else if(i % 5 ===0){
+      console.log("Buzz")
+   }else{
+      console.log("prime")
+   }
+}
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
 
@@ -107,6 +128,12 @@ Using the vowelCounter function below do the following:
 */
 
 
-function vowelCounter(/*add your code here*/) {
-    /*add your code here*/
+function vowelCounter(Counter) {
+
+
+
+
+
+
 }
+
