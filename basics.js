@@ -8,6 +8,9 @@ Do the following:
 
    HINT: look up the Number method / Raadi Number Method wax la dhaho
 */
+let number = "1999";
+parseInt(number);
+console.log(typeof (number));
 
 
 /*
@@ -19,7 +22,21 @@ Do the following:
    3. Else just print 'So moody!' / Hadii kale 'So Moody!' soo saar.
 
 */
+let mood = prompt ('enter your mood today'); // - happy or -'sad' 
+let mood1='happy';
+let mood2='sad';
+if (mood==mood1){
+    console.log("Yay me too!");
 
+}
+else if(mood==mood2){
+        console.log("Aw cheer up");
+
+}
+else{
+    console.log("So moody!");
+
+}
 
 /*
 Task: Odd or Even / kisi ama dhaban
@@ -31,8 +48,15 @@ Adigoo 'if/else' isticmaalaayo hubi in nambar uu yahay 'kisi ama dhaban', kadi c
 */
 
 var num = 16; // You can change this number! / Number-kaan ku bilow
+if (num%2==1){
+   console.log("this number is odd");
+}
+else {
+   console.log("this number is even");
+}
 
 // write your conditions here / Code-kaada halkaan ku qor
+
 
 
 
@@ -92,6 +116,15 @@ It's okay for it to be slow.
 
 
 */
+for (let A = 1; A < 101; A++) {
+   if (A % 3 == 0) 
+   console.log("Fizz");
+   else if (A % 5 == 0) 
+   console.log("Buzz");
+   else if (A % 15 == 0) 
+   console.log("FizzBuzz");
+   else console.log("the number is prime");
+}
 
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
@@ -107,6 +140,17 @@ Using the vowelCounter function below do the following:
 */
 
 
-function vowelCounter(/*add your code here*/) {
-    /*add your code here*/
-}
+function vowelCounter(vowel) {
+   let count = 0;
+   let char = ["a", "e", "i", "o", "u" ];
+ 
+   for (let i = 0; i < vowel.length; i++) {
+     let change = vowel[i].toLowerCase();
+     if (char.includes(change)) {
+       count++;
+     }
+   }
+ 
+   return count;
+ }
+ console.log(vowelCounter("Hello Iqra!"));
