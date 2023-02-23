@@ -3,15 +3,23 @@
 // Take the commented ES5 syntax and convert it to ES6 arrow Syntax
 
 
-/*
 
-------------
-function myFunction() {
+
+//------------
+/*function myFunction() {
 console.log("Function was invoked!");
-};
+};*/
+
+
+//----------------ES6 --------------------
+var myFunction = () => {
+  console.log("Function was invoked!");
+}
 
 myFunction();
-----------------
+
+
+//----------------
 
 let anotherFunction = function (param) {
   return param;
@@ -19,15 +27,31 @@ let anotherFunction = function (param) {
 
 anotherFunction("Example");
 
----------------
 
-let add = function (param1, param2) {
+//----------------ES6 --------------------
+
+
+
+
+
+
+
+
+//---------------
+
+/*let add = function (param1, param2) {
   return param1 + param2;
 };
 
-add(1,2);
+add(1,2);*/
+//------------------ES6---------------------
+let add = (param1, param2) => {
+  return param1+param2
+}
 
-*/
+add(1,4);
+
+
 
 
 
