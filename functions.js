@@ -99,4 +99,3 @@ function game(user, computer){
   const result = game("rock", "paper");
   
   console.log(result);
-
