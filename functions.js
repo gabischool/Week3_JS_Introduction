@@ -28,7 +28,7 @@ let add = function (param1, param2) {
 add(1,2);
 
 */
-let myFunction = () => {
+const myFunction = () => {
   console.log("Function was invoked!");
   };
   
@@ -41,7 +41,7 @@ let myFunction = () => {
   anotherFunction("Example");
   
   
-  let add =  (param1, param2) => {
+  var add =  (param1, param2) => {
     return param1 + param2;
   };
   
@@ -96,7 +96,7 @@ function game(user, computer){
     }
   }
   
-  let result = game("rock", "paper");
+  const result = game("rock", "paper");
   
   console.log(result);
 
