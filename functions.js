@@ -21,11 +21,22 @@ myFunction();
 
 //----------------
 
-let anotherFunction = function (param) {
+/*let anotherFunction = function (param) {
   return param;
+};*/
+
+
+let anotherFunction = (param) => {
+
+return param;
+
 };
 
-anotherFunction("Example");
+
+
+//anotherFunction("Example");
+
+
 
 
 //----------------ES6 --------------------

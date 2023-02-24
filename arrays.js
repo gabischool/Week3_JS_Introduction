@@ -102,8 +102,13 @@ console.log(sortName)
   // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
   
   // Dadka qaabilsan xisaabinta ayaa rabo inay ogaadaan sanadyada gawaarida oo dhan. Array cusub samee, kadibna ku shub sanadyada gawaarida oo dhan kadibna console.log ku samee.
-
-
+  
+  let caarYears = [];
+console.log();
+for(let x = 0; x < inventory.length; x++){
+    caarYears.push(inventory[x]['car_year']);
+}
+console.log(caarYears);
 
   // ==== Challenge 5 ====
   // The car lot manager needs to find out how many cars are older than the year 2000. Find out how many cars were made before the year 2000 by populating the array oldCars and logging it's length.
@@ -126,15 +131,14 @@ console.log();
   // Qof rabo inuu gaari gato ayaa rabo inuu ogaado inta BMW iyo Audi yaalo. Array 'BMWAndAudi' la dhaho ku shub dhamaan gawaarida BMW iyo Audi. Kadib adigoo isticmaalaayo JSON.stringify() console.log ku samee.
 
 
-console.log();
-
-
-let BMWAndAudi = []
-
-for (let i = 0; i < inventory.length; i++) {
-    if (inventory[i].car_make == "BMW" && "Audi") {
-        BMWAndAudi.push(inventory[i].car_make)
-    }
-}
-
-console.log("We have ", BMW.length, "BMW cars" , Audi.length, "Audi Cars")
+  let BMWAndAudi =[];
+  console.log();
+  
+  for(let x = 0; x < inventory.length; x++){
+      let carMake = inventory[x]['car_make']
+      if(carMake === "BMW" || carMake === "Audi"){
+          BMWAndAudi.push(inventory[x]);
+      }
+  }
+  
+  console.log(JSON.stringify(BMWAndAudi));
