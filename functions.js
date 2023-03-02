@@ -30,8 +30,33 @@ add(1,2);
 */
 
 
+const myFunction = () => {
+  console.log("Function was invoked!");
+};
+myFunction();
 
-/*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task: Rock, Paper, Scissors - Let's play against the computer! 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
+
+
+
+
+ 
+let anotherFunction =(param) =>{
+  return param;
+};
+
+anotherFunction("example");
+
+
+
+
+
+let add = (param1, param2)=> {
+  return param1 + param2;
+};
+
+add(1,2);
+
+/*🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task: Rock, Paper, Scissors - Let's play against the computer! 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
 /*
 Create a global variable that randomly generates the computer's choice
@@ -52,3 +77,40 @@ Use the game function below to do the following:
 function game(user, computer){
     /*add your code here*/
 }
+
+// 1 = rock
+// 2= paper
+// 3 =sisscer
+
+let myNum1 = Math.floor((Math.random()* 3 )+ 1);
+let mychioce = prompt("you a number from 1-3")
+function game (person ){
+  if( myNum1 === person){
+    console.log("draw");
+  }
+  else if( myNum1 === 1 && person == 2){
+    console.log("person win");
+  }
+  else if( myNum1 === 1 && person == 3){
+    console.log("computer win");
+  }
+  else if( myNum1 === 2 && person == 1){
+    console.log("computer win");
+  }
+  else if( myNum1 === 2 && person == 3){
+    console.log("person win");
+  }
+  else if( myNum1 === 3 && person == 2){
+    console.log("computer win");
+  }
+  else if( myNum1 === 3 && person == 1){
+    console.log("person win");
+  }
+};
+
+
+
+
+
+
+

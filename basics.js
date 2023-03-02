@@ -10,6 +10,11 @@ Do the following:
 */
 
 
+const age = "1999";
+
+console.log(parseFloat(age));
+
+
 /*
 Task: Mood Checker
 
@@ -20,6 +25,16 @@ Do the following:
 
 */
 
+// const mood=prompt("enter your mood");
+// if(mood ==="happy") {
+//    console.log("Yay me too!");
+// }
+// else if (mood==="sad"){
+//    console.log("Aw cheer up");
+// }
+// else{
+//    console.log("so moody");
+// };
 
 /*
 Task: Odd or Even / kisi ama dhaban
@@ -29,6 +44,14 @@ Use conditionals to check if a hardcoded number is odd or even, and then console
 Adigoo 'if/else' isticmaalaayo hubi in nambar uu yahay 'kisi ama dhaban', kadi console log ku samee adigoo sheegaayo midkuu yahay
 
 */
+
+// const number =prompt("enter your number")
+// if(number % 2 == 0){
+//    console.log("the number is even ")
+// }else {console.log("the number is odd ")
+   
+// }
+
 
 var num = 16; // You can change this number! / Number-kaan ku bilow
 
@@ -93,6 +116,21 @@ It's okay for it to be slow.
 
 */
 
+function fizzbuzz(){
+   for(let i = 1; i<=100;i++ ){
+if(i % 3 === 0 && i % 5 === 0){
+   console.log("fizzbuzz");
+}else if(i % 3 === 0 ){
+   console.log("fizz");
+}else if (i % 5 === 0){
+   console.log("Buzz");
+}else{
+   console.log(i)
+}
+
+   }
+};
+ fizzbuzz() 
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
 
