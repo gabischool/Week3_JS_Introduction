@@ -76,36 +76,69 @@ let inventory = [
   
   // ==== Challenge 1 ====
   // The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which car has an id of 33 by logging the car's year, make, and model in the console log provided to you below:
-
+      
   // Ma xasuustaan ID-ga gaariga 33 aad, ka caawi inay ogaadaan ID-ga gaariga 33aad. Waa inaa soo bandhigto sanadka gaariga, noocuu yahay (make) iyo modelka gaariga. Habkaan usoo bandhig:
 
   // console.log(`Car 33 is a *car year goes here* *car make goes here* *car model goes here*`);
 
-
+console.log(inventory[32], inventory[32].car_make, "and car_model:", inventory[32].car_model)
   
   // ==== Challenge 2 ====
   // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
 
   // Waxay rabaan inay ogaadaan macluumaadka gaariga ugu dambeeyay. Waxaa ka mid ah inay noocuu yahay (make) iyo modelka gaariga ugu dambeeyay.
+let lastCar = 0;
+console.log("carMake:", inventory[49].car_make, "and car_model:", inventory[49].car_model);
 
   
   // ==== Challenge 3 ====
   // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
   
   // Dadka qaabilsan xayaysiinta ayaa rabo in gawaarida loo soo bandhigo xarfaha habkey iskugu xigaan (alphabetically) si ay website-ka u galiyaan. Magacyada gawaawida oo dhan isku habee si A-Z ah kadibna console.log ku samee.
-
+let sortName = inventory.sort
+console.log(sortName)
 
   // ==== Challenge 4 ====
   // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
   
   // Dadka qaabilsan xisaabinta ayaa rabo inay ogaadaan sanadyada gawaarida oo dhan. Array cusub samee, kadibna ku shub sanadyada gawaarida oo dhan kadibna console.log ku samee.
   
+  let caarYears = [];
+console.log();
+for(let x = 0; x < inventory.length; x++){
+    caarYears.push(inventory[x]['car_year']);
+}
+console.log(caarYears);
+
   // ==== Challenge 5 ====
   // The car lot manager needs to find out how many cars are older than the year 2000. Find out how many cars were made before the year 2000 by populating the array oldCars and logging it's length.
+let oldCars = []
+
+for (let i = 0; i < inventory.length; i++) {
+    if (inventory[i].car_make == "Mazda") {
+        mazdaCars.push(inventory[i].car_make)
+    }
+}
 
   // Qofka maamulo ganacsiga ayaa rabo inuu ogaado inta gaari oo ka horeysay sanadkii 2000. Isticmaal array 'oldCars', kuna shub gawaarida ka horeysay 2000. Kadib console log ku samee.
   
+let carYears = [];
+console.log();
+
   // ==== Challenge 6 ====
   // A buyer is interested in seeing only BMW and Audi cars within the inventory. Return an array that only contains BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
 
   // Qof rabo inuu gaari gato ayaa rabo inuu ogaado inta BMW iyo Audi yaalo. Array 'BMWAndAudi' la dhaho ku shub dhamaan gawaarida BMW iyo Audi. Kadib adigoo isticmaalaayo JSON.stringify() console.log ku samee.
+
+
+  let BMWAndAudi =[];
+  console.log();
+  
+  for(let x = 0; x < inventory.length; x++){
+      let carMake = inventory[x]['car_make']
+      if(carMake === "BMW" || carMake === "Audi"){
+          BMWAndAudi.push(inventory[x]);
+      }
+  }
+  
+  console.log(JSON.stringify(BMWAndAudi));

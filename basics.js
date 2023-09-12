@@ -9,6 +9,8 @@ Do the following:
    HINT: look up the Number method / Raadi Number Method wax la dhaho
 */
 
+let num1 = parseInt("199")
+console.log(num1,typeof(num1))
 
 /*
 Task: Mood Checker
@@ -16,9 +18,18 @@ Task: Mood Checker
 Do the following:   
    1. Write a script that prompts the user for their current mood. / Code qor u soo saaraayo qof meeshuu ku qori lahaa siduu dareemaayo
    2. If the user inputs happy, print 'Yay me too!' to the console, sad print 'Aw cheer up', / Haduu qofka galiyo 'happy', console log samee ah 'Yay me too', haduu 'sad' galiyo, 'Aw Cheer up' console ku qor.
-   3. Else just print 'So moody!' / Hadii kale 'So Moody!' soo saar.
+   3. Else just print 'So moody!'                                  / Hadii kale 'So Moody!' soo saar.
 
 */
+
+
+
+
+
+
+ 
+ 
+ 
 
 
 /*
@@ -90,8 +101,28 @@ You should print this whenever you encounter a number that is prime (divisible o
 As you implement this, don't worry about the efficiency of the algorithm you use to check for primes. 
 It's okay for it to be slow.
 
-
 */
+for (let i = 0; i <= 100; i++) {
+   if (i % 3 == 0 && i % 5) {
+      console.log("FizBuzz")
+   }
+   else if (i % 3 == 0) {
+      console.log("Fizz")
+   }
+   else if (i % 5 == 0) {
+      console.log("Buzz")
+   }
+
+   else {
+      console.log(i)
+   }
+}
+
+
+
+
+
+
 
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/

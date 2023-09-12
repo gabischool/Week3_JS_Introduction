@@ -11,32 +11,86 @@
 
 // Example format of an intern object: 1, examples@you.edu, Example, F
 const example = {
-    id: 0,
-    name: "Example",
-    email: "examples@you.edu",
-    gender: "F",
-  }
+  id: 0,
+  name: "Example",
+  email: "examples@you.edu",
+  gender: "F",
+}
+
+// Write your intern objects here:
+const info1 = {
+  id: 1,
+  name: "Mitzi",
+  email: "mmelloy0@psu.edu",
+  gender: "F",
+}
+console.log(info1)
+
+//-------------------
+const info2 = {
+  id: 2,
+  name: "kennan",
+  email: "kdiben1@tinypic.com",
+  gender: "m",
+}
+console.log(info2)
+
+//------------------
+const info3 = {
+  id: 3,
+  name: "keven",
+  email: "kmummery2@wikimedia.org",
+  gender: "m",
+}
+console.log(info3)
+
+//------------------
+const info4 = {
+  id: 4,
+  name: "Gannie",
+  email: "kmummery2@wikimedia.org",
+  gender: "m",
+}
+console.log(info4)
+
+//------------------------
+const info5 = {
+  id: 5,
+  name: " Antonietta",
+  email: "adaine5@samsung.com",
+  gender: "f",
+}
+console.log(info5)
   
   // Write your intern objects here:
   
   
   // ==== Challenge 2: Reading Object Data ==== 
   // Once your objects are created, log out the following requests from HR into the console:
-  
-  // Mitzi's name
-  
-  // Kennan's ID
-  
-  // Keven's email
-  
-  // Gannie's name
-  
-  // Antonietta's Gender
+
+// Mitzi's name
+console.log(info1.name)
+// Kennan's ID
+console.log(info2.id)
+// Keven's email
+console.log(info3.email)
+// Gannie's name
+console.log(info4.name)
+// Antonietta's Gender
+console.log(info5.gender)
   
   // ==== Challenge 3: Object Methods ==== 
   // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
   // console.log(kennan.speak());
-  
+   
+  let objectKennan =[];
+  console.log();
+
+  objectKennan.speak = function () {
+    console.log('Hello, my name is Kennan!');
+  }
+
+
   // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
   //console.log(antonietta.multiplyNums(3,4));
   
