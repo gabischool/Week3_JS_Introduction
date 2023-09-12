@@ -3,6 +3,35 @@
 // Take the commented ES5 syntax and convert it to ES6 arrow Syntax
 
 
+const myfunction = ()=> {
+  console.log("Function was invoked!");
+
+
+}
+
+myfunction()
+
+
+
+
+
+let anotherFunction = (numper,item)=> {
+  
+  console.log(numper , item)
+
+
+}
+anotherFunction(3,6)
+
+
+
+
+let add = (param1, param2) => {
+  return param1 + param2;
+};
+
+console.log(add(8,10))
+
 /*
 
 ------------

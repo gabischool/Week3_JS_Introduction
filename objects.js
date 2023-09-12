@@ -42,3 +42,50 @@ const example = {
   
   // === Great work! === Head over to the the arrays.js. You may come back and attempt the Stretch Challenge once you have completed the challenges in arrays.js and function-conversion.js.
   
+
+  const intern1 = {
+    id: 1,
+    email: "mmelloy0@psu.edu",
+    firstName: "Mitzi",
+    gender: "F"
+  };
+  
+  const intern2 = {
+    id: 2,
+    email: "kdiben1@tinypic.com",
+    firstName: "Kennan",
+    gender: "M"
+  };
+  
+  const intern3 = {
+    id: 3,
+    email: "kmummery2@wikimedia.org",
+    firstName: "Keven",
+    gender: "M"
+  };
+  
+  const intern4 = {
+    id: 4,
+    email: "gmartinson3@illinois.edu",
+    firstName: "Gannie",
+    gender: "M"
+  };
+  
+  const intern5 = {
+    id: 5,
+    email: "adaine5@samsung.com",
+    firstName: "Antonietta",
+    gender: "F"
+  };
+  
+  
+  intern2.speak = function() {
+    return "Hello, my name is " + this.firstName + "!";
+  };
+  
+  intern5.multiplyNums = function(num1, num2) {
+    return num1 * num2;
+  };
+  
+  console.log(intern2.speak()); // "Hello, my name is Kennan!"
+  console.log(intern5.multiplyNums(3, 4)); // 12
